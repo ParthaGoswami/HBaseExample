@@ -1,5 +1,3 @@
-package edu.okstate.cs.tashwin.Station;
-
 import org.apache.hadoop.io.Text;
 
 public class NcdcStationMetadataParser {
