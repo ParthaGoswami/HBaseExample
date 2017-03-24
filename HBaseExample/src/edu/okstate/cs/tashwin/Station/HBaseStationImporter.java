@@ -1,5 +1,3 @@
-package edu.okstate.cs.tashwin.Station;
-
 /*Source code adopted from URL
  * https://github.com/tomwhite/hadoop-book/blob/master/ch20-hbase/src/main/java/NewHBaseStationImporter.java
  * Additions made are as follows
