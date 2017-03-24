@@ -1,3 +1,0 @@
-This Git project contains sorice code adopted from https://github.com/tomwhite/hadoop-book/
-
-In this project data from HDFS/local file is exported to a HBase table and the data in a HTable is queried.
