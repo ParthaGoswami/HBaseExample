@@ -11,3 +11,5 @@ Steps & order to compile programs to load stations data into HTable
 
 Importing Data into stations HTable
 1. java -cp $CLASSPATH:. HBaseStationImporter hdfs hdfs://hadoop1:9000/CS5433/WeatherData/stations-fixed-width.txt tashwin:stations hdfs://hadoop1:9000
+
+Open Hbase Shell and check if the rows have been inserted by typing "count 'tashwin:stations'" on the cLI. If data has been insterted the count should not be zero
