@@ -1,5 +1,3 @@
-package edu.okstate.cs.tashwin.Temperature;
-
 import java.text.*;
 import java.util.Date;
 
