@@ -31,6 +31,8 @@ Bundle all the java files into a JAR file
 jar cvf MyExample.jar *
 
 To import temperature data issue the following command in CLI
+
+
 HADOOP_CLASSPATH=$(hbase classpath) hadoop jar MyExample.jar HBaseTemperatureImporter path/to/Observations namespace:observations
 
 To Query Temperature & Stations use the following commands
