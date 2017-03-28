@@ -1,5 +1,3 @@
-package edu.okstate.cs.tashwin.Temperature;
-
 import org.apache.hadoop.hbase.util.Bytes;
 
 public class RowKeyConverter {
