@@ -5,6 +5,7 @@
  * 2. Allowing the users to specify the table name to import contents to
  * 3. Allowing the users to specify a name node URL if they have to import data from HDFS*/
 
+
 import java.io.IOException;
 import java.util.Map;
 
