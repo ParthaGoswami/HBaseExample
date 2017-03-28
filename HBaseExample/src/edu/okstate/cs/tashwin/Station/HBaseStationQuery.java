@@ -47,20 +47,20 @@ public class HBaseStationQuery extends Configured implements Tool {
   }
 
   public int run(String[] args) throws IOException {
-    if (args.length != 1) {
-      System.err.println("Usage: HBaseStationQuery <station_id>");
+    if (args.length != 2) {
+      System.err.println("Usage: HBaseStationQuery <table-name> <station_id>");
       return -1;
     }
 
     Configuration config = HBaseConfiguration.create();
     Connection connection = ConnectionFactory.createConnection(config);
     try {
-      TableName tableName = TableName.valueOf("stations");
+      TableName tableName = TableName.valueOf(args[0]);
       Table table = connection.getTable(tableName);
       try {
-        Map<String, String> stationInfo = getStationInfo(table, args[0]);
+        Map<String, String> stationInfo = getStationInfo(table, args[1]);
         if (stationInfo == null) {
-          System.err.printf("Station ID %s not found.\n", args[0]);
+          System.err.printf("Station ID %s not found.\n", args[1]);
           return -1;
         }
         for (Map.Entry<String, String> station : stationInfo.entrySet()) {
