@@ -71,8 +71,8 @@ public int run(String[] args) throws IOException {
             return -1;
     	}
     }
-    System.out.println(args[0]+args[1]+args[2]+isHdfsPath+hdfsMaster);
-    System.exit(1);
+    /*System.out.println(args[0]+args[1]+args[2]+isHdfsPath+hdfsMaster);
+    System.exit(1);*/
     Configuration config = HBaseConfiguration.create();
     Connection connection = ConnectionFactory.createConnection(config);
     try {
