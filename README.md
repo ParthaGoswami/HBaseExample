@@ -12,7 +12,7 @@ Steps & order to compile programs to load stations data into HTable
 1. javac -cp $CLASSPATH:. NcdcStationMetadata.java
 1. javac -cp $CLASSPATH:. NcdcStationMetadataParser.java
 1. javac -cp $CLASSPATH:. HBaseStationQuery.java
-1. javac -cp $CLASSPATH:. HBaseStationQuery.java
+1. javac -cp $CLASSPATH:. HBaseStationImporter.java
 
 Importing Data into stations HTable
 1. java -cp $CLASSPATH:. HBaseStationImporter hdfs path/to/stations-fixed-width.txt namespace:stations hdfs://NameNode:9000
